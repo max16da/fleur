@@ -1,13 +1,8 @@
 #! /usr/bin/python
 # -*- coding: utf-8-unix; -*- 
 
-# En-tête du module et déclaration des objets et fonctions de celui-ci
-#
-
-#~ if __name__ == "__main__":
-	#~ # Code du corps principal
-
-phrase="";	
+suject=[]
+phraseFinale="";
 	
 #fonction qui interroge l'utilisateur
 def donnees_utilisateur():
@@ -19,16 +14,20 @@ def donnees_utilisateur():
 	else:
 		print "Tape 'g' si tu es un garçon ou 'f' si tu es une fille. Relance le programme."
 		exit()
+	suject=sujet
+	recupere_donnees(suject)
+	#~ suject.append(sujet)
+
+#fonction qui récupère et affiche le résultat à l'utilisateur	
+def recupere_donnees(suject):
 	nb_petales=int(raw_input("Entre le nombre de pétales de la fleur: "))
-	
-	
-def recupere_donnees():
 	mots_ritournelle = ["m'aime", "un peu", "beaucoup", "passionnément", "à la folie", "pas du tout"]
 	n = 1
 	num_mot = 0
+	phrase=""
 	while n <= nb_petales:
 		if num_mot == 0:
-			phrase = phrase + sujet + " "
+			phrase = phrase + suject + " "
 		if num_mot > 0:
 			phrase = phrase + ", "
 		phrase = phrase + mots_ritournelle[num_mot]
@@ -38,9 +37,10 @@ def recupere_donnees():
 		else:
 			phrase = phrase + ".  "
 			num_mot = 0
-	
-def affiche():
-	recupere_donnees();
+
 	print phrase;
 
-affiche();
+# En-tête du module et déclaration des objets et fonctions de celui-ci
+if __name__ == "__main__":
+	donnees_utilisateur()
+	#~ recupere_donnees(suject)

@@ -3,7 +3,7 @@ Numéro:2
 Version:0.4
 Milestone:1.0
 Impact:fort
-Etat:ouvert
+Etat:clos
 Description:
 + Un outil d'installation serait d'une aide précieuse pour les utilisateurs 
 + comme pour les développeurs, il facilitera la maintenance et allégera les 
@@ -16,3 +16,4 @@ Journal:
 + allégera les tests de déploiement et facilitera la maintenance.
 +
 + [2015-09-15] Création de la fiche
++ [2015-10-14] Enregistrement du projet et des fiches de suivi dans le système de suivi de version.

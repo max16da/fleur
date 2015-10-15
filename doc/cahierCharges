@@ -1,0 +1,17 @@
+############################################################################### 
+#
+# Outil: ex_client.py
+#
+#============================================================================== 
+#
+# Auteur et Licence: 
+#  (C) 2015 - M Girard
+#
+#	Cahier des charges:
+#	Créer un programme qui exécute la commande des produits achetés
+#	Demande à l'utilisateur si il veut acheter un article, si oui, il propose 
+#	la liste des articles à acheter.
+#	Lorsque tous les articles ont été choisis, on demande la validation 
+#	de la commande, on obtient une page html regroupant les articles choisis, 
+#	le prix HT, la TVA et le prix TTC de chaque produit et le total de tous les produits
+###############################################################################
